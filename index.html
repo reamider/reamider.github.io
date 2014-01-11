@@ -47,20 +47,20 @@
 <h3>
 <a name="podstawowe-komendy-w-systemie-linux-" class="anchor" href="#podstawowe-komendy-w-systemie-linux-"><span class="octicon octicon-link"></span></a>Podstawowe komendy w systemie Linux :</h3>
 
-<pre><code><font color="orange">cp - kopiuje plik</font>
-<font color="orange">cd - zmienia katalog</font>
-<font color="orange">chmod - zmienia uprawnienia do pliku</font>
-<font color="orange">ls - wyświetla zawartość katalogu</font>
-<font color="orange">logout - wylogowuje</font>
-<font color="orange">mkdir - tworzy katalog</font>
-<font color="orange">mv - przenosi plik, lub zmienia jego nazwę</font>
-<font color="orange">mvdir - przenosi katalog, lub zmienia jego nazwę</font>
-<font color="orange">rm - usuwa pusty plik</font>
-<font color="orange">rmdir - usuwa pusty katalog</font>
-<font color="orange">passwd - zmienia hasło</font>
-<font color="orange">shutdown - zamyka Linuxa</font>
-<font color="orange">who - sprawdza kto jest aktualnie zalogowany</font>
-<font color="orange">whoami - pokazuje kim jesteśmy</font>
+<pre><code><font color="orange">cp</font> - kopiuje plik
+<font color="orange">cd</font> - zmienia katalog
+<font color="orange">chmod</font> - zmienia uprawnienia do pliku
+<font color="orange">ls</font> - wyświetla zawartość katalogu
+<font color="orange">logout</font> - wylogowuje
+<font color="orange">mkdir</font> - tworzy katalog
+<font color="orange">mv</font> - przenosi plik, lub zmienia jego nazwę
+<font color="orange">mvdir</font> - przenosi katalog, lub zmienia jego nazwę
+<font color="orange">rm</font> - usuwa pusty plik
+<font color="orange">rmdir</font> - usuwa pusty katalog
+<font color="orange">passwd</font> - zmienia hasło
+<font color="orange">shutdown</font> - zamyka Linuxa
+<font color="orange">who</font> - sprawdza kto jest aktualnie zalogowany
+<font color="orange">whoami</font> - pokazuje kim jesteśmy
 </code></pre>
 
 <p>Oczywiście to nie wszystkie komendy, jakie ma do zaoferowania Linux. Więcej znajdziemy <a href="http://www.gabo.hi.pl/linux/polecenia.htm">tutaj.</a> </p>
@@ -69,14 +69,28 @@
 <a name="rozwi%C4%85zania-zada%C5%84-ze-%C5%9Arodowiska-programisty-" class="anchor" href="#rozwi%C4%85zania-zada%C5%84-ze-%C5%9Arodowiska-programisty-"><span class="octicon octicon-link"></span></a>Rozwiązania zadań ze Środowiska Programisty :</h3>
 
 
-<li>Wyświetl na ekran 2 pierwsze wiersze pliku program.c.</li>
-<pre><code>
-<font color="orange">head -n 2 program.c</font>
-</pre></code>
-<li>Wyświetl na ekran 4 ostatnie wiersze pliku program.c.</li>
-<pre><code>
-tail -n 4 program.c
-</pre></code>
+<li>1. Wyświetl na ekran 2 pierwsze wiersze pliku program.c.</li>
+<pre><code><font color="yellow">head -n 2 program.c</font></pre></code>
+<li>2. Wyświetl na ekran 4 ostatnie wiersze pliku program.c.</li>
+<pre><code><font color="yellow">tail -n 4 program.c</font></pre></code>
+<li>3. W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”.</li>
+<pre><code><font color="yellow">grep "main" program.c</font></pre></code>
+<li>4. Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień. </li>
+<pre><code><font color="yellow">chmod u+rw program.c
+chmod g+r program.c
+chmod o-rwx program.c</font></pre></code>
+<li>5. Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.</li>
+<pre><code><font color="yellow">mv dom/wazne-sprawy praca/wazne-sprawy</font></pre></code>
+<li>6. Zarchiwizuj cały katalog temp.</li>
+<pre><code><font color="yellow">zip -r temp.zip temp</font></pre></code>
+<li>7. Usuń katalog temp.</li>
+<pre><code><font color="yellow">rm -R temp</font></pre></code>
+<li>8. Odtwórz z archiwum katalog temp.</li>
+<pre><code><font color="yellow">unzip temp.zip</font></pre></code>
+<li>9. Posprzątaj na swoim koncie.</li>
+<pre><code><font color="yellow">rm -r temp.zip</font></pre></code>
+<p>To rozwiązania Laboratorium 2(<a href="http://wbzyl.inf.ug.edu.pl/sp/labs02"><font color="orange">link</font></a>). Resztę rozwiązań można znaleść w moim <a href="http://github.com/reamider/srodowisko"><font color="orange">repozytorium.</font></a></p>
+
       </section>
 
     </div>
