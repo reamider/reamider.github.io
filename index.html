@@ -63,7 +63,7 @@
 <font color="orange">whoami</font> - pokazuje kim jesteśmy
 </code></pre>
 
-<p>Oczywiście to nie wszystkie komendy, jakie ma do zaoferowania Linux. Więcej znajdziemy <a href="http://www.gabo.hi.pl/linux/polecenia.htm">tutaj.</a> </p>
+<p>Oczywiście to nie wszystkie komendy, jakie ma do zaoferowania Linux. Więcej znajdziemy <a href="http://www.gabo.hi.pl/linux/polecenia.htm"><font color="orange">tutaj.</font></a></p>
 
 <h3>
 <a name="rozwi%C4%85zania-zada%C5%84-ze-%C5%9Arodowiska-programisty-" class="anchor" href="#rozwi%C4%85zania-zada%C5%84-ze-%C5%9Arodowiska-programisty-"><span class="octicon octicon-link"></span></a>Rozwiązania zadań ze Środowiska Programisty :</h3>
@@ -89,7 +89,7 @@ chmod o-rwx program.c</font></pre></code>
 <pre><code><font color="yellow">unzip temp.zip</font></pre></code>
 <li>9. Posprzątaj na swoim koncie.</li>
 <pre><code><font color="yellow">rm -r temp.zip</font></pre></code>
-<p>To rozwiązania Laboratorium 2(<a href="http://wbzyl.inf.ug.edu.pl/sp/labs02"><font color="orange">link</font></a>). Resztę rozwiązań można znaleść w moim <a href="http://github.com/reamider/srodowisko"><font color="orange">repozytorium.</font></a></p>
+<p>To rozwiązania Laboratorium 2(<a href="http://wbzyl.inf.ug.edu.pl/sp/labs02"><font color="yellow">link</font></a>). Resztę rozwiązań można znaleść w moim <a href="http://github.com/reamider/srodowisko"><font color="yellow">repozytorium.</font></a></p>
 <h3>Rozwiązania zadań z Wstępu do programowania:</h3>
 
 <ol start="1"><li>Dwumian Newtona<pre><code><font color="red">#include stdio.h>
@@ -178,7 +178,41 @@ void main(){
                 printf("\n");
         }
 }</pre></code></font></li></ol><p>To tylko rozwiązanie kilku zadań.Więcej można znaleźć w moim <a href="http://github.com/reamider/wstepdoprog/"><font color="red">repozytorium.</font></a></p>
-
+<h3>Skrypty:</h3>
+<li>Sprawdzający, która liczba podana jako parametr jest większa<pre><code><font color="green">#!/bin/bash
+if [ $1 -gt $2 ]
+then
+echo "pierwsza liczba jest większa"
+elif [ $1 -le $2 ]
+echo "druga liczba jest wieksza"
+else
+echo "liczby są równe"
+fi</pre></code></font></li>
+<li>Zmieniający nazwy plików na liczby od 1 do n<pre><code><font color="green">#!/bin/bash
+for i in *
+do
+mv $i $numer
+numer=$[ numer + 1 ]
+done
+echo "Zmienionych plików: $numer"</pre></code></font></li>
+<li>Wyświetlający podaną przez użytkownika ilość gwiazdek<pre><code><font color="green">#!/bin/bash
+i=1
+while [ $i -le $1 ]
+do
+echo -n '*'
+i=$[i+1]
+done</pre></code></font></li>
+<li>Dodający liczby podane jako parametr<pre><code><font color="green">#!/bin/bash
+wynik = `expr $1 + $2`
+echo "$wynik"</pre></code></font></li>
+<li>Sortujacy parametry alfabetycznie><pre><code><font color="green">#!/bin/bash
+for i in $@
+do
+echo $i >> /tmp/sortuj.tmp
+done
+echo `sort /tmp/sortuj.tmp`
+rm -f /tmp/sortuj.tmp</pre></code></font></li>
+<p>Więcej tego typu skryptów można znaleźć w tym <a href="http://github.com/reamider/skrypty/"><font color="green">repozytorium.</font></a></p>
       </section>
 
     </div>
