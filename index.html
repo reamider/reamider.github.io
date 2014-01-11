@@ -92,6 +92,93 @@ chmod o-rwx program.c</font></pre></code>
 <p>To rozwiązania Laboratorium 2(<a href="http://wbzyl.inf.ug.edu.pl/sp/labs02"><font color="orange">link</font></a>). Resztę rozwiązań można znaleść w moim <a href="http://github.com/reamider/srodowisko"><font color="orange">repozytorium.</font></a></p>
 <h3>Rozwiązania zadań z Wstępu do programowania:</h3>
 
+<ol start="1"><li>Dwumian Newtona<pre><code><font color="red">#include stdio.h>
+int newton(int n,int k){
+        if(k==0||k==n) return 1;
+        else return newton(n-1,k)+newton(n-1,k-1);
+}
+int main(){
+        int n;
+        int k;
+        int wynik;
+        printf("podaj liczbe n:");
+        scanf("%d", &n);
+        printf("podaj liczbe k:");
+        scanf("%d", &k);
+        wynik=newton(n,k);
+        printf("silnia wynosi: %d", wynik);
+        return 0;
+}</pre></code></font></li></ol>
+<ol start="2"><li>Objętość stożka<pre><code><font color="red">#include stdio.h>
+float stozek(float r,float h){
+        return (3.14*r*r*h)/3;
+}
+int main(){
+        float r;
+        float h;
+        float objetosc;
+        printf("podaj wartosc promienia:");
+        scanf("%f", &r);
+        printf("podaj wartosc wysokosci:");
+        scanf("%f", &h);
+        objetosc=stozek(r,h);
+        printf("Objetosc stozka wynosi: %f", objetosc);
+        return 0;
+}</pre></code></font></li></ol>
+<ol start="3"><li>Suma elementów tablicy<pre><code><font color="red">#include stdio.h>
+int main(){
+int tab[4];
+printf("podaj wartosc pierwsza:");
+scanf("%d", &tab[0]);
+printf("podaj wartosc druga:");
+scanf("%d", &tab[1]);
+printf("podaj wartosc trzecia:");
+scanf("%d", &tab[2]);
+printf("podaj wartosc czwarta:");
+scanf("%d", &tab[3]);
+printf("podaj wartosc piata:");
+scanf("%d", &tab[4]);
+int i;
+int suma=0;
+for(i=0;i<5;i++){
+        suma=suma+tab[i];
+}
+        printf("suma elementow tablicy wynosi: %d", suma);
+}</pre></code></font></li></ol>
+<ol start="4"><li>Palindrom<pre><code><font color="red">#include stdio.h>
+#include string.h>
+int main()
+{
+  char wyraz[100];
+  int i=0, j;
+  printf("Podaj slowo: ");
+  scanf("%s", wyraz);
+  j=strlen(wyraz)-1;
+  while((wyraz[j-i]==wyraz[i]) && i=j)i++;
+  if (j==i)
+  printf("%s jest palindromem \n", wyraz);
+  else
+  printf("%s nie jest palindromem \n", wyraz);
+  return 0;
+}</pre></code></font></li></ol>
+<ol start="5"><li>Trapez prostokątny<pre><code><font color="red">#include stdio.h>
+void main(){
+        int h;
+        int a;
+        printf("Podaj dlugosc podstawy gornej:");
+        scanf("%d", &a);
+        printf("Podaj wysokosc:");
+        scanf("%d", &h);
+	int i;
+        for(i=0; i-h; i++){
+                int j;
+                for(j=0; j-i+a; j++){
+                        printf("*");
+                }
+                printf("\n");
+        }
+}</pre></code></font></li></ol><p>To tylko rozwiązanie kilku zadań.Więcej można znaleźć w moim <a href="http://github.com/reamider/wstepdoprog/"><font color="red">repozytorium.</font></a></p>
+
       </section>
 
     </div>
