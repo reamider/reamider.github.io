@@ -364,6 +364,123 @@ f(x) & = & -\sin x \\
 <script src="js/lightbox-2.6.min.js"></script>
 <p><center>Po wywołaniu powyższego kodu otrzymamy :</p></center>
 <a href="img/image1.jpg" data-lightbox="image1" title="LATEX"><img src="http://i.imgur.com/RDH2IXj.jpg" alt="latex" /></a>
+<pre><code><font color="teal">\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{amsmath} 
+\usepackage{wasysym} 
+\usepackage{graphicx}
+
+\begin{document}
+
+\section{Rozdzia�  pierwszy}
+
+Naszym celem jest ...
+
+\subsection{Podrozdział pierwszy}
+
+środowisko enumerate
+
+\begin{enumerate}
+ \item Punkt 1
+ \item Punkt 2
+\end{enumerate}
+
+środowisko itemize
+
+\begin{itemize}
+ \item Punkt 1
+ \item Punkt 2
+\end{itemize}
+
+środowisko tabular \& center
+
+\begin{center}
+
+\begin{tabular}{|c| c| c| c|c|c|}
+\hline
+\hfil 1\hfil
+&
+\hfil 2\hfil
+&
+\hfil 3\hfil
+&
+\hfil 4\hfil
+&
+\hfil $\sum=40$
+&
+\hfil $\%$
+\\
+\hline
+aa
+&
+a
+&
+b
+&
+c
+&
+d
+&
+e
+\\\hline
+\end{tabular}
+\end{center}
+
+środowisko verbatim
+
+\begin{verbatim}
+> 1:20
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 
+[13] 13 14 15 16 17 18 19 20 
+\end{verbatim}
+
+\newpage 
+
+\section{Grafika}
+
+
+\begin{picture}(0,0)(0,0)
+\put(40,-100)
+{\parbox[c]{100mm}
+{\includegraphics[height=75mm]{rys3.pdf}}}
+\end{picture}
+
+
+
+\begin{picture}(0,0)(0,0)
+\put(40,-300)
+{\parbox[c]{100mm}
+{\includegraphics[height=50mm]{rys3.pdf}}}
+\end{picture}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{rys3.pdf}
+\caption{Opis rysunku nr 1}
+\label{fig:rys}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{rys3.pdf}
+\caption{Opis rysunku nr 2}
+\label{fig:rys-bis}
+\end{figure}
+
+
+Rysunek \ref{fig:rys-bis} przedstawia wykresy w oryginalnym rozmiarze,
+natomiast rysunek \ref{fig:rys} przedstawia wykresy, których rozmiar stanowi
+$60\%$ rozmiaru oryginalnego. 
+
+\end{document}</pre></code></font>
+<p><center>Po wywołaniu tego kodu otrzymamy :</p></center>
+<a href="img/image2.jpg" data-lightbox="image2" title="LATEX2"><img src="http://i.imgur.com/99sarzL.jpg" alt="latex" /></a>
 </section>
 
     </div>
