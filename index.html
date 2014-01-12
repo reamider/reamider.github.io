@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sebastian Matyjas - Blog by reamider</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!--[if lt IE 8]>
+<link rel="stylesheet" href="stylesheets/ie.css">
+<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/reamider">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Sebastian Matyjas - Blog</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/reamider">reamider</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>
+<a name="witam-na-moim-blogu" class="anchor" href="#witam-na-moim-blogu"><span class="octicon octicon-link"></span></a>Witam na moim Blogu.</h2>
+
+<p>Nazywam się Sebastian Matyjas i jestem studentem I roku Informatyki na Uniwersytecie Gdańskim. Interesuje się motoryzacją, piłką nożną i muzyką. Na swojej stronie będę zamieszczać zadania ze środowiska programisty i wstępu do programowania.</p>
+
+<blockquote>
+<p>”Są dwa sposoby na tworzenie projektu oprogramowania. Jednym jest stworzenie go tak prostym, żeby nie było w nim żadnych oczywistych braków. Drugim stworzenie go tak skomplikowanym, żeby nie było w nim żadnych oczywistych braków” – C.A.R. Hoare</p>
+</blockquote>
+
+<h3>
+<a name="podstawowe-komendy-w-systemie-linux-" class="anchor" href="#podstawowe-komendy-w-systemie-linux-"><span class="octicon octicon-link"></span></a>Podstawowe komendy w systemie Linux :</h3>
+
+<pre><code><font color="orange">cp</font> - kopiuje plik
+<font color="orange">cd</font> - zmienia katalog
+<font color="orange">chmod</font> - zmienia uprawnienia do pliku
+<font color="orange">ls</font> - wyświetla zawartość katalogu
+<font color="orange">logout</font> - wylogowuje
+<font color="orange">mkdir</font> - tworzy katalog
+<font color="orange">mv</font> - przenosi plik, lub zmienia jego nazwę
+<font color="orange">mvdir</font> - przenosi katalog, lub zmienia jego nazwę
+<font color="orange">rm</font> - usuwa pusty plik
+<font color="orange">rmdir</font> - usuwa pusty katalog
+<font color="orange">passwd</font> - zmienia hasło
+<font color="orange">shutdown</font> - zamyka Linuxa
+<font color="orange">who</font> - sprawdza kto jest aktualnie zalogowany
+<font color="orange">whoami</font> - pokazuje kim jesteśmy
+</code></pre>
+
+<p>Oczywiście to nie wszystkie komendy, jakie ma do zaoferowania Linux. Więcej znajdziemy <a href="http://www.gabo.hi.pl/linux/polecenia.htm"><font color="orange">tutaj.</font></a></p>
+
+<h3>
+<a name="rozwi%C4%85zania-zada%C5%84-ze-%C5%9Arodowiska-programisty-" class="anchor" href="#rozwi%C4%85zania-zada%C5%84-ze-%C5%9Arodowiska-programisty-"><span class="octicon octicon-link"></span></a>Rozwiązania zadań ze Środowiska Programisty :</h3>
+
+
+<li>1. Wyświetl na ekran 2 pierwsze wiersze pliku program.c.</li>
+<pre><code><font color="yellow">head -n 2 program.c</font></pre></code>
+<li>2. Wyświetl na ekran 4 ostatnie wiersze pliku program.c.</li>
+<pre><code><font color="yellow">tail -n 4 program.c</font></pre></code>
+<li>3. W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”.</li>
+<pre><code><font color="yellow">grep "main" program.c</font></pre></code>
+<li>4. Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień. </li>
+<pre><code><font color="yellow">chmod u+rw program.c
+chmod g+r program.c
+chmod o-rwx program.c</font></pre></code>
+<li>5. Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.</li>
+<pre><code><font color="yellow">mv dom/wazne-sprawy praca/wazne-sprawy</font></pre></code>
+<li>6. Zarchiwizuj cały katalog temp.</li>
+<pre><code><font color="yellow">zip -r temp.zip temp</font></pre></code>
+<li>7. Usuń katalog temp.</li>
+<pre><code><font color="yellow">rm -R temp</font></pre></code>
+<li>8. Odtwórz z archiwum katalog temp.</li>
+<pre><code><font color="yellow">unzip temp.zip</font></pre></code>
+<li>9. Posprzątaj na swoim koncie.</li>
+<pre><code><font color="yellow">rm -r temp.zip</font></pre></code>
+<p>To rozwiązania Laboratorium 2(<a href="http://wbzyl.inf.ug.edu.pl/sp/labs02"><font color="yellow">link</font></a>). Resztę rozwiązań można znaleść w moim <a href="http://github.com/reamider/srodowisko"><font color="yellow">repozytorium.</font></a></p>
+<h3>Rozwiązania zadań z Wstępu do programowania:</h3>
+
+<ol start="1"><li>Dwumian Newtona<pre><code><font color="red">#include stdio.h>
+int newton(int n,int k){
+        if(k==0||k==n) return 1;
+        else return newton(n-1,k)+newton(n-1,k-1);
+}
+int main(){
+        int n;
+        int k;
+        int wynik;
+        printf("podaj liczbe n:");
+        scanf("%d", &n);
+        printf("podaj liczbe k:");
+        scanf("%d", &k);
+        wynik=newton(n,k);
+        printf("silnia wynosi: %d", wynik);
+        return 0;
+}</pre></code></font></li></ol>
+<ol start="2"><li>Objętość stożka<pre><code><font color="red">#include stdio.h>
+float stozek(float r,float h){
+        return (3.14*r*r*h)/3;
+}
+int main(){
+        float r;
+        float h;
+        float objetosc;
+        printf("podaj wartosc promienia:");
+        scanf("%f", &r);
+        printf("podaj wartosc wysokosci:");
+        scanf("%f", &h);
+        objetosc=stozek(r,h);
+        printf("Objetosc stozka wynosi: %f", objetosc);
+        return 0;
+}</pre></code></font></li></ol>
+<ol start="3"><li>Suma elementów tablicy<pre><code><font color="red">#include stdio.h>
+int main(){
+int tab[4];
+printf("podaj wartosc pierwsza:");
+scanf("%d", &tab[0]);
+printf("podaj wartosc druga:");
+scanf("%d", &tab[1]);
+printf("podaj wartosc trzecia:");
+scanf("%d", &tab[2]);
+printf("podaj wartosc czwarta:");
+scanf("%d", &tab[3]);
+printf("podaj wartosc piata:");
+scanf("%d", &tab[4]);
+int i;
+int suma=0;
+for(i=0;i<5;i++){
+        suma=suma+tab[i];
+}
+        printf("suma elementow tablicy wynosi: %d", suma);
+}</pre></code></font></li></ol>
+<ol start="4"><li>Palindrom<pre><code><font color="red">#include stdio.h>
+#include string.h>
+int main()
+{
+  char wyraz[100];
+  int i=0, j;
+  printf("Podaj slowo: ");
+  scanf("%s", wyraz);
+  j=strlen(wyraz)-1;
+  while((wyraz[j-i]==wyraz[i]) && i=j)i++;
+  if (j==i)
+  printf("%s jest palindromem \n", wyraz);
+  else
+  printf("%s nie jest palindromem \n", wyraz);
+  return 0;
+}</pre></code></font></li></ol>
+<ol start="5"><li>Trapez prostokątny<pre><code><font color="red">#include stdio.h>
+void main(){
+        int h;
+        int a;
+        printf("Podaj dlugosc podstawy gornej:");
+        scanf("%d", &a);
+        printf("Podaj wysokosc:");
+        scanf("%d", &h);
+        int i;
+        for(i=0; i-h; i++){
+                int j;
+                for(j=0; j-i+a; j++){
+                        printf("*");
+                }
+                printf("\n");
+        }
+}</pre></code></font></li></ol><p>To tylko rozwiązania kilku zadań.Więcej można znaleźć w moim <a href="http://github.com/reamider/wstepdoprog/"><font color="red">repozytorium.</font></a></p>
+<h3>Skrypty:</h3>
+<li>Sprawdzający, która liczba podana jako parametr jest większa<pre><code><font color="green">#!/bin/bash
+if [ $1 -gt $2 ]
+then
+echo "pierwsza liczba jest większa"
+elif [ $1 -le $2 ]
+echo "druga liczba jest wieksza"
+else
+echo "liczby są równe"
+fi</pre></code></font></li>
+<li>Zmieniający nazwy plików na liczby od 1 do n<pre><code><font color="green">#!/bin/bash
+for i in *
+do
+mv $i $numer
+numer=$[ numer + 1 ]
+done
+echo "Zmienionych plików: $numer"</pre></code></font></li>
+<li>Wyświetlający podaną przez użytkownika ilość gwiazdek<pre><code><font color="green">#!/bin/bash
+i=1
+while [ $i -le $1 ]
+do
+echo -n '*'
+i=$[i+1]
+done</pre></code></font></li>
+<li>Dodający liczby podane jako parametr<pre><code><font color="green">#!/bin/bash
+wynik = `expr $1 + $2`
+echo "$wynik"</pre></code></font></li>
+<li>Sortujacy parametry alfabetycznie><pre><code><font color="green">#!/bin/bash
+for i in $@
+do
+echo $i >> /tmp/sortuj.tmp
+done
+echo `sort /tmp/sortuj.tmp`
+rm -f /tmp/sortuj.tmp</pre></code></font></li>
+<p>Więcej tego typu skryptów można znaleźć w tym <a href="http://github.com/reamider/skrypty/"><font color="green">repozytorium.</font></a></p>
+<h3>Latex</h3>
+<pre><code><font color="teal">\begin{document}
+
+\documentclass[12pt]{article}
+
+\usepackage[polish]{babel}
+
+\usepackage[cp1250]{inputenc}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{amsthm}
+
+\usepackage{amsmath}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage{amsfonts}
+
+\sloppy
+
+\section{Podzbiory}
+
+\begin{definition}
+
+Mówimy, że \textit{zbiór $A$ jest pozdbiorem zbioru $B$, piszemy\\ $A\subseteq B$, wtedy i tylko wtedy, gdy każdy element zbioru $A$ jest elementem zbioru $B$, czyli mamy}
+
+\begin{equation}
+
+\label{alg:sample1}
+
+\subseteq B \Leftrightarrow \forall_x [x\in A \Rightarrow x\in B]
+
+\end{equation}
+
+\label{definicja 1.1}
+
+\end{definition}
+
+Symbol $\subseteq$ nazywamy znakiem inkluzji lub znakiem zawierania. Fakt, że zbiór $A$ nie jest podzbiorem zbioru $B$, wyrażamy zapisem $A \not \subseteq B$. Zatem wobec \eqref{alg:sample1}, prawa eliminacji implikacji i prawa de Morgana dla alternatywy, mamy
+
+\begin{equation}
+
+A\not \subseteq B \Leftrightarrow \exists_x [x\in A \wedge x \notin B]
+
+\end{equation}
+
+\begin{example}
+
+$\{a,b\}\subseteq \{a,b,c\}$ i $\{1,2,3\}\not \subseteq \{1,3,5\}$.
+
+\end{example}
+
+Z zasady ekstensjonalności oraz z definicji podzbioru (zob. definicję \ref{definicja 1.1}) wynika, że dwa zbiory są równe wtedy i tylko wtedy gdy jeden z nich jest podzbiorem drugiego i odwrotnie. Zatem dla zbiorów $A$ i $B$ mamy
+
+\begin{equation}
+
+A=B \Leftrightarrow A \subseteq B \quad \hbox{i} \quad B \subseteq A.
+
+\end{equation}
+
+\begin{theorem}
+
+\textit{Jeśli $A$, $B$ i $C$ są zbiorami takimi, że $A\subseteq B$ i $B\subseteq C$. to $A\subseteq C$}.
+
+\end{theorem}
+
+\begin{proof}
+
+Zauważmy, że $A\subseteq B$ i $B\subseteq C$. We�my dowolny element $x\in A$. Ponieważ $x\in A$ i $A\subseteq B$, więc wobec definicji \ref{definicja 1.1} wnioskujemy, że $x\in B$. Teraz $x\in B$ i $B \subseteq C$, więc znowu korzystamy z definicji \ref{definicja 1.1} i tym razem wnioskujemy, że $x\in C$. To kończy dowód inkluzji $A\subseteq C$.
+
+\end{proof}
+
+\begin{example}
+
+Uzasadnimy, że mamy
+
+\begin{equation*}
+
+\{x\in \mathbb{R} : x^{2}-7x+10=0\} = \{2,5\}
+
+\end{equation*}
+
+Dla liczby rzeczywistej $x$ mamy równoważności:
+
+\begin{align*}
+
+x^{2}-7x+10=0 &\Leftrightarrow (x-2)(x-5)=0 \\
+
+&\Leftrightarrow x-2=0 \quad \hbox{lub} \quad x-5=0 \\
+
+&\Leftrightarrow x=2 \quad \hbox{lub} \quad x=5
+
+\end{align*}
+
+\end{example}
+
+\newpage
+
+Stąd wynika równość ziorów $\{x\in \mathbb{R} : x^{2}-7x+10=0\}$ i $\{2,5\}$.
+
+Zbiory warto ilustorwać za pomocą rysunków nazywanych diagramami Venna. Rysunek \ref{rys:Diagram Venna} graficznie wyraża fakt, że $A$ jest podzbiorem zbioru $B$.
+
+\begin{figure}[htp]
+
+\begin{center}
+
+\includegraphics[width=8cm]{zbiory.JPG}
+
+\end{center}
+
+\caption{Diagram Venna}
+
+\label{rys:Diagram Venna}
+
+\end{figure}
+
+\section{Ciekawostki}
+
+\begin{displaymath}
+
+y = \left\{ \begin{array}{ll}
+
+a & \textrm{jezeli $d>c$}\\
+
+b+x & \textrm{rano}\\
+
+l & \textrm{w~ciagu dnia}
+
+\end{array} \right.
+
+\end{displaymath}
+
+\begin{eqnarray}
+
+f(x) & = & \cos x \\
+
+f(x) & = & -\sin x \\
+
+\int_{0}^{x} f(y)dy &
+
+= & \sin x
+
+\end{eqnarray}
+
+\end{document}</pre></code></font>
+<p><center>Po wywołaniu powyższego kodu otrzymamy :</p></center>
+<img src="http://i.imgur.com/RDH2IXj.jpg" alt="Dokument LATEX" />
+</section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
